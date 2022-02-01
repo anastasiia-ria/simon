@@ -9,7 +9,7 @@
     "start": "npm run build; webpack-dev-server --open --mode development",
     "lint": "eslint src/*.js",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [],
   "author": "",
