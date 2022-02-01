@@ -100,11 +100,6 @@ h1 {
   box-shadow: inset 0px 0px 20px 5px rgba(0, 0, 0, 0.6);
 }
 
-.active {
-  opacity: 100%;
-  background-color: black;
-}
-
 #error {
   position: absolute;
   left: 50%;
@@ -116,6 +111,7 @@ h1 {
   padding: 100px 0;
   background-color: white;
   display: none;
+  font-size: 40px;
 }
 
 .speed button {

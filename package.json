@@ -3,10 +3,13 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "homepage": "http://anastasiia-ria.github.io/simon",
   "scripts": {
     "build": "webpack --mode development",
     "start": "npm run build; webpack-dev-server --open --mode development",
-    "lint": "eslint src/*.js"
+    "lint": "eslint src/*.js",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "keywords": [],
   "author": "",
@@ -16,6 +19,7 @@
     "css-loader": "^3.2.0",
     "eslint": "^6.3.0",
     "eslint-loader": "^3.0.0",
+    "gh-pages": "^3.2.3",
     "html-webpack-plugin": "^3.2.0",
     "style-loader": "^1.0.0",
     "webpack": "4.39.3",

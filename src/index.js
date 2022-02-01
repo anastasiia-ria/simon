@@ -8,7 +8,9 @@ let userSequence = [];
 let rightSequence = new Simon();
 
 function display() {
-  $("#display").html(rightSequence.number);
+  if(rightSequence.number > 0) {
+    $("#display").html(rightSequence.number - 1);
+  }
 }
 $("#display").html(rightSequence.number);
 

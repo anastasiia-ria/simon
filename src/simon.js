@@ -66,7 +66,7 @@ Simon.prototype.compareSequence = function (checkSequence) {
     $("#error").show();
     setTimeout(function () {
       $("#error").hide();
-    }, 800);
+    }, 1500);
     checkSequence = this.clearSequences(checkSequence);
     this.addSequence();
     this.showSequence();
