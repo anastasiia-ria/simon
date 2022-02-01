@@ -1,8 +1,8 @@
 export default function Simon() {
-  // this.number = 0;
-  // this.sequence = [];
-  // this.speed = 350;
-  // this.same = true;
+  this.number = 0;
+  this.sequence = [];
+  this.speed = 350;
+  this.same = true;
 }
 
 Simon.prototype.addSequence = function () {
