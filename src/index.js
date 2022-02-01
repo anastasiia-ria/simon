@@ -86,28 +86,28 @@ $("#start").click(function () {
 
 $("#green").click(function () {
   userSequence.push(0);
-  userSequence = rightSequence.compareSequence(userSequence);
+  rightSequence.compareSequence(userSequence);
   checkSame();
   display();
 });
 
 $("#red").click(function () {
   userSequence.push(1);
-  userSequence = rightSequence.compareSequence(userSequence);
+  rightSequence.compareSequence(userSequence);
   checkSame();
   display();
 });
 
 $("#blue").click(function () {
   userSequence.push(2);
-  userSequence = rightSequence.compareSequence(userSequence);
+  rightSequence.compareSequence(userSequence);
   checkSame();
   display();
 });
 
 $("#yellow").click(function () {
   userSequence.push(3);
-  userSequence = rightSequence.compareSequence(userSequence);
+  rightSequence.compareSequence(userSequence);
   checkSame();
   display();
 });

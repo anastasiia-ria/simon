@@ -21,8 +21,11 @@ Simon.prototype.compareSequence = function (checkSequence) {
       break;
     }
   }
-  console.log("compare");
-  return checkSequence;
+  if (this.same === false) {
+    return "They are not the same";
+  } else {
+    return "They are the same";
+  }
 };
 
 Simon.prototype.clearSequences = function (uSequence) {
