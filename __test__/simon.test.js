@@ -14,4 +14,20 @@ describe('Simon', () => {
     const newSimon = new Simon();
     expect(newSimon.addSequence()).toEqual("Number was added to the sequence");
   });
+  
+  test('should correctly determine that sequence entered by user and random sequence are not the same', () => {
+    const newSimon = new Simon();
+    newSimon.number = 1;
+    newSimon.sequence = [0];
+    const userSequence = [1];
+    expect(newSimon.compareSequence(userSequence)).toEqual("They are not the same");
+  });
+
+  test('should correctly determine that sequence entered by user and random sequence are the same', () => {
+    const newSimon = new Simon();
+    newSimon.number = 1;
+    newSimon.sequence = [1];
+    const userSequence = [1];
+    expect(newSimon.compareSequence(userSequence)).toEqual("They are the same");
+  });
 });
