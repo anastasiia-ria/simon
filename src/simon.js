@@ -29,8 +29,8 @@ Simon.prototype.compareSequence = function (checkSequence) {
 };
 
 Simon.prototype.clearSequences = function (uSequence) {
-  //   this.number = 0;
-  //   this.sequence = [];
-  //   uSequence = [];
-  //   return uSequence;
+  this.number = 0;
+  this.sequence = [];
+  uSequence = [];
+  return uSequence;
 };
