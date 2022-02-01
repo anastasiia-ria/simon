@@ -6,9 +6,9 @@ export default function Simon() {
 }
 
 Simon.prototype.addSequence = function () {
-  // this.sequence.push(Math.floor(Math.random() * 4));
-  // this.number++;
-  // return "Number was added to the sequence";
+  this.sequence.push(Math.floor(Math.random() * 4));
+  this.number++;
+  return "Number was added to the sequence";
 };
 
 Simon.prototype.compareSequence = function (checkSequence) {
